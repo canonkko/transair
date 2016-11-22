@@ -1,0 +1,45 @@
+html,
+body {height: 100%;}
+
+body {
+	font: 16px/1.42 "ptsansregular", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+a {text-decoration: none;}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+textarea {
+	outline: none;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	@extend %clearfix;
+}
+
+*, *:before, *:after {box-sizing: border-box;}

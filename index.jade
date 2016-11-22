@@ -1,0 +1,99 @@
+doctype html
+//if lt IE 7 
+	html.ie.ie6(lang='en')  
+//if IE 7 
+	html.ie.ie7(lang='en')  
+//if IE 8 
+	html.ie.ie8(lang='en')  
+// [if (gte IE 9)|!(IE)] <!
+html(lang='ru')
+	// <![endif]
+	//if lte IE 8
+		p.chromeframe
+			| Похоже, что ты используешь
+			| устаревший браузер, друг. Пожалуйста, 
+			a(href='http://browsehappy.com/')
+			| скачай новый браузер абсолютно
+			| бесплатно
+			| или 
+			a(href='http://www.google.com/chromeframe/?redirect=true') активируй Google Chrome Frame
+	head
+		meta(charset='utf-8')
+		title Title
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='stylesheet', href='css/main.css')
+	body
+		header.header
+			.header__top
+				.container
+						.col__left
+							nav.nav
+								ul.nav__list
+									li.nav__item
+										a.nav__link(href="#") USE site
+									li.nav__item
+										a.nav__link(href="#") Deutsch site
+									li.nav__item
+										Росиия: 
+										a.nav__link(href="#") Switch to english
+						.col__right
+							ul.login__list
+								li.login__item
+									a.login__link(href="#")
+										img.login__img(src="img/icons/1.svg", alt="clock")
+										Онлайн-табло
+								li.login__item
+									a.login__link.login__link-js(href="№") Вход и регистрация
+			.header__bottom
+				.container
+					.logo
+						img.logo__pic(src="img/content/logo.jpg", alt="Трансаэро")
+					.tabs__wrapper
+						.tabs
+							.tab.active Возможности
+							.tab Информация
+							.tab Привилегии
+						.tab__content
+							.tab__item
+								.slider.owl-carousel
+									.slide
+										img.slide__img(src="img/content/slide_img.jpg", alt="jet")
+										.container
+											.slide__text-wrap
+												h1.slide__title Открывайте мир 
+													span вместе с Трансаэро
+														img.title__img(src="img/icons/jet.png", alt="")
+												.slide__subtitle Почувствуйте комфорт современного Boeing 747-300
+									.slide
+										img.slide__img(src="img/content/slide_img.jpg", alt="jet")
+										.container
+											.slide__text-wrap
+												h1.slide__title Открывайте мир 
+													span вместе с Трансаэро
+														img.title__img(src="img/icons/jet.png", alt="")
+												.slide__subtitle Почувствуйте комфорт современного Boeing 747-300
+									.slide
+										img.slide__img(src="img/content/slide_img.jpg", alt="jet")
+										.container
+											.slide__text-wrap
+												h1.slide__title Открывайте мир 
+													span вместе с Трансаэро
+														img.title__img(src="img/icons/jet.png", alt="")
+												.slide__subtitle Почувствуйте комфорт современного Boeing 747-300
+							.tab__item Информация
+							.tab__item Привилегии
+					.search
+						input.input__search(type="search", placeholder="поиск по сайту")
+						button.search__btn(type="submit")
+		.popup
+			button.popup__btn-close
+			form.popup-form
+				label.popup__label(for="email") E-mail
+				input.popup__input(type="email", name="email", id="email", required)
+				label.popup__label(for="password") Пароль
+				input.popup__input(type="password", name="password", id="password", required)
+				button.popup__btn Войти
+				
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		script(src='js/scripts.js')

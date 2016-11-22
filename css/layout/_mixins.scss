@@ -1,0 +1,14 @@
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin trs($duration: 0.5s, $timing: ease) {
+  transition: all $duration $timing;
+}
